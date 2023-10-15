@@ -1,28 +1,44 @@
-Hello,
+<!DOCTYPE html>
+<html lang="en">
 
-This is a personal project.
+<body>
 
-The goal is to create a personnal Console Banking App implemented in C.
+<h2> The Blue Bank </h2>
 
-How to install:
-Note: This is only a console and there for can only be run on a terminal.
+<p>Hello,</p>
 
-1. Clone this repository
+<p>This is a personal project.<p>
 
+<p>The goal is to create a personnal Console Banking App implemented in C.<p>
+
+<h4>How to install:</h4>
+<p>Note: This is only a console and there for can only be run on a terminal.<p>
+<ol>
+<li>Clone this repository</li>
+
+<code>
 git clone git@github.com:Motunblue/BankingApp.git
+</code>
 
-2. Run the executable
+<li>Complite and run the executable</li>
 
-./bank.c
+<code>
+gcc bank.c bank
+./bank
+</code>
+<ol>
 
-How to Use:
-With the bank app. You will be able to perfom basic banking operations such:
-Creating of account
-Depositing money
-Transfer of funds
-Checking of Account Balance
+<h4>How to Use:</h4>
 
-When you start the bank app, you will received a prompt where you can enter command.
+<p>With the bank app. You will be able to perfom basic banking operations such:</p>
+<ul>
+<li>Creating of account</li>
+<li>Depositing money</li>
+<li>Transfer of funds</li>
+<li>Checking of Account Balance</li>
+<ul>
+
+<p>When you start the bank app, you will received a prompt where you can enter command.
 
 If no account as been registered yet. You will be prompted to create an account.
 
@@ -33,4 +49,7 @@ After account creation, you will be asked to login.
 Don't worry if you forgot your password. You can get that again by validating your email and Lastname.
 
 
-Remember, you can always use help command to guide you.
+Remember, you can always use help command to guide you.</p
+
+</body>
+</html>
