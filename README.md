@@ -7,26 +7,29 @@
 
 <p>Hello,</p>
 
-<p>This is a personal project.<p>
+<p>This is a personal project.</p>
 
-<p>The goal is to create a personnal Console Banking App implemented in C.<p>
+<p>The goal is to create a Banking App console implemented in C.</p>
 
 <h4>How to install:</h4>
-<p>Note: This is only a console and there for can only be run on a terminal.<p>
+<p>Note: This is only a console and therefore can only be run on a terminal.</p>
 <ol>
 <li>Clone this repository</li>
-
+<pre>
 <code>
 git clone git@github.com:Motunblue/BankingApp.git
 </code>
+</pre>
 
 <li>Complite and run the executable</li>
 
+<pre>
 <code>
 gcc bank.c bank
 ./bank
 </code>
-<ol>
+</pre>
+</ol>
 
 <h4>How to Use:</h4>
 
@@ -36,7 +39,7 @@ gcc bank.c bank
 <li>Depositing money</li>
 <li>Transfer of funds</li>
 <li>Checking of Account Balance</li>
-<ul>
+</ul>
 
 <p>When you start the bank app, you will received a prompt where you can enter command.
 
@@ -49,7 +52,7 @@ After account creation, you will be asked to login.
 Don't worry if you forgot your password. You can get that again by validating your email and Lastname.
 
 
-Remember, you can always use help command to guide you.</p
+Remember, you can always use help command to guide you.</p>
 
 </body>
 </html>
