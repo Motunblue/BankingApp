@@ -54,5 +54,7 @@ Don't worry if you forgot your password. You can get that again by validating yo
 
 Remember, you can always use help command to guide you.</p>
 
+
+<p>To contribute to this repository please <a href="mailto:moajirotutu@gmail.com">Contact me.</a> Thank you</p>
 </body>
 </html>
