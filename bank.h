@@ -29,6 +29,20 @@ typedef struct entry_s
 	void (*fptr)(entry_data_t *);
 } entry_t;
 
+typedef struct account_info_s
+{
+	int id;
+	char* first_name;
+	char* last_name;
+	char* balance;
+} account_info;
+
+typedef struct users_s
+{
+	account_info user;
+	struct users_s *next;  
+} users_t;
+
 
 
 /**************** Function Protypes ****************/
