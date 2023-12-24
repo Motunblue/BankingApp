@@ -1,14 +1,5 @@
 #include "bank.h"
 
-void entryprompt(void)
-{
-	printf("Welcome to the Motun bank\n");
-	printf("You can proceed to login by first providing your email\n");
-	printf("Don't have an account? please enter \"create account\"\n");
-    printf("To exit, please enter quit\"\n");
-}
-
-
 
 /**
   * get_tok - a funtion that takes in the token

@@ -14,12 +14,21 @@
 #define CLEAR {0, NULL, NULL, NULL}
 
 /**************** Structure ****************/
+typedef struct account_info_s
+{
+	int id;
+	char* first_name;
+	char* last_name;
+	char* balance;
+} account_info;
+
 typedef struct entry_data_s
 {
 	int tokens;
 	char **token;
 	char *line;
 	FILE *file;
+	account_info *user;
 } entry_data_t;
 
 
@@ -29,13 +38,6 @@ typedef struct entry_s
 	void (*fptr)(entry_data_t *);
 } entry_t;
 
-typedef struct account_info_s
-{
-	int id;
-	char* first_name;
-	char* last_name;
-	char* balance;
-} account_info;
 
 typedef struct users_s
 {
