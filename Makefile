@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89
 
-SRC = bank.c bank.h helpers.c
+SRC = bank.c bank.h cleaners.c entry.c helpers.c 
 
 TARGET = bank
 

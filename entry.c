@@ -6,7 +6,7 @@ void entryprompt(void)
 	printf("Welcome to The Blue bank\n");
 	printf("You can proceed to login by first providing your email\n");
 	printf("Don't have an account? please enter \"create account\"\n");
-    	printf("To exit, please enter quit\"\n");
+    printf("To exit, please enter quit\"\n");
 }
 
 
@@ -81,12 +81,12 @@ void create_account(entry_data_t *data)
 				line[c - 2] = '\0';
 				if (strlen(line) > 50) {
 					printf("Lastname cannot be more that 50 characters long");
-					goto first;
+					goto last;
 				}
 					
 				else if (strlen(line) < 2)  {
 					printf("lastname cannnot be less than 2 characters long");
-					goto first;
+					goto last;
 				}
 				else
 					data->user->first_name = line;
