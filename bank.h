@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include <sqlite3.h>
 #include <regex.h>
 
 

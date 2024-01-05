@@ -1,12 +1,31 @@
 #include "bank.h"
 
+void save(account_info *user) {
+	sqlite3 *db;
+	char *errMessage = 0;
+	int rc = sqlite3_open("bank.db", &db);
+
+	if (rc) {
+        fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+        return 0;
+    } else {
+        fprintf(stderr, "Opened database successfully\n");
+    }
+
+	const char *sql = "CREATE TABLE IF NOT EXISTS PERSON("
+                       "ID INT PRIMARY KEY     NOT NULL,"
+                       "NAME           TEXT    NOT NULL,"
+                       "AGE            INT     NOT NULL);";
+	
+	rc = sqlite3_exec(db, sql, 0, 0, &errMessage);
+}
 
 void entryprompt(void)
 {
-	printf("Welcome to The Blue bank\n");
+	printf("Welcome to The Blue bank\n\n");
 	printf("You can proceed to login by first providing your email\n");
-	printf("Don't have an account? please enter \"create account\"\n");
-    printf("To exit, please enter quit\"\n");
+	printf("Don't have an account? please enter \"create account\"\n\n");
+    printf("To exit, please enter \"quit\"\n\n");
 }
 
 
@@ -26,7 +45,7 @@ int checkentry(entry_data_t *data)
 
 	while (entry_list[i].entry)
 	{
-		if (strcmp(entry_list[i].entry, data->token[0]))
+		if (!strcmp(entry_list[i].entry, data->token[0]))
 			entry_list[i].fptr(data);
 		i++;
 	}
@@ -63,13 +82,12 @@ void create_account(entry_data_t *data)
 					goto first;
 				}
 				else
-					data->user->first_name = line;
-				
+					data->user->first_name = line;	
 			}
 				
 				
 		}
-	last:	
+	/*last:	
 		printf("Enter Lastname\n");
 		r = getline(&line, &n, stdin);
 		{
@@ -94,7 +112,7 @@ void create_account(entry_data_t *data)
 			}
 				
 				
-		}
+		}*/
 		/*Write a save function to save the struct to a file*/
-
+	save(data->user);
 }

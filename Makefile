@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89
+CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89 -lsqlite3
 
 SRC = bank.c bank.h cleaners.c entry.c helpers.c 
 

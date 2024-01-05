@@ -29,9 +29,10 @@ int main(void)
 
 
 			entry = checkentry(data);
-			if (entry) 
+			if (!entry) 
 			{
-				printf("You have not typed an allowed entry"); /*Move this somewhere eles*/
+				printf("\nYou have not typed an allowed entry\n\n\n"); /*Move this somewhere else*/
+				sleep(1);
 				goto here;/*Implement some cleaning here*/
 			}
 		}
